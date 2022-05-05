@@ -17,7 +17,7 @@ jobs:
         cache: maven
         
     - name: Build with Maven Wrapper
-      run: ./mvnw -B package
+      run: mvn package --file pom.xml
       
     - name: Build and Tag image
       run: |
